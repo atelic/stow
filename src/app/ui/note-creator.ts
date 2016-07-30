@@ -22,6 +22,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
       <form class="row" (submit)="onCreateNote()">
         <input
           type="text"
+          (focus)="toggle(true)"
           [(ngModel)]="newNote.title"
           name="newNoteTitle"
           placeholder="Title"
@@ -31,7 +32,6 @@ import { Component, Output, EventEmitter } from '@angular/core';
         <input
           type="text"
           (focus)="toggle(true)"
-          (focusout)="toggle(false)"
           [(ngModel)]="newNote.value"
           name="newNoteValue"
           placeholder="Take a note..."

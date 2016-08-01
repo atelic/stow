@@ -17,40 +17,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 }
 
 `],
-    template: `
-<div class="note-creator shadow-2">
-      <form class="row" (submit)="onCreateNote()">
-        <input
-          type="text"
-          (focus)="toggle(true)"
-          [(ngModel)]="newNote.title"
-          name="newNoteTitle"
-          placeholder="Title"
-          class="col-xs-10 title"
-          *ngIf="fullForm"
-        >
-        <input
-          type="text"
-          (focus)="toggle(true)"
-          [(ngModel)]="newNote.value"
-          name="newNoteValue"
-          placeholder="Take a note..."
-          class="col-xs-10"
-        >
-        <div
-        class="actions col-xs-12 row between-xs"
-        *ngIf="fullForm"
-        >
-          <button
-            type="submit"
-            class="btn-light"
-           >
-            Done
-          </button>
-        </div>
-      </form>
-    </div>
-`
+    templateUrl: 'app/templates/note-creator.html'
 })
 export class NoteCreator {
     @Output() createNote = new EventEmitter();

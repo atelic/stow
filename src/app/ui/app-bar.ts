@@ -21,19 +21,7 @@ import { Component } from '@angular/core';
   cursor: pointer;
 }
     `],
-    template: `
-<header class="app-bar row middle-xs">
-  <span class="logo col-xs-10">
-    Stow
-  </span>
-  <nav class="col-xs-2">
-    <div class="row middle-xs between-xs">
-      <span class="link">Settings</span>
-      <span class="link">signout</span>
-    </div>
-  </nav>
-</header>
-`
+    templateUrl: 'app/templates/app-bar.html'
 
 })
 export class AppBar {}

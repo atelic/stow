@@ -18,7 +18,7 @@ import 'rxjs/Rx';
       margin-bottom: 40px;
     }
   `],
-  templateUrl: 'app/templates/notes.html'
+  template: require('./templates/notes.html')
 })
 export class Notes implements OnDestroy {
     notes = [];

@@ -39,7 +39,7 @@ import {
       cursor: pointer;
     }
   `],
-    templateUrl: 'app/templates/note-card.html'
+    template: require('./templates/note-card.html')
 })
 export class NoteCard {
   @Input() note = {};

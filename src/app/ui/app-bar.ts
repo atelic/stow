@@ -24,7 +24,7 @@ import { AuthService } from '../services';
   cursor: pointer;
 }
     `],
-    templateUrl: 'app/templates/app-bar.html'
+    template: require('./templates/app-bar.html')
 
 })
 export class AppBar {

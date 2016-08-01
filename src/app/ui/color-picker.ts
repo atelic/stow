@@ -30,7 +30,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   color: grey;
   cursor: pointer;
 }`],
-    templateUrl: 'app/templates/color-picker.html'
+    template: require('./templates/color-picker.html')
 })
 export class ColorPicker {
     @Input() colors: Array<string> = [];

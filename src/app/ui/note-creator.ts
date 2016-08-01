@@ -19,7 +19,7 @@ import { ColorPicker } from './color-picker';
 }
 
 `],
-    templateUrl: 'app/templates/note-creator.html'
+    template: require('./templates/note-creator.html')
 })
 export class NoteCreator {
     @Output() createNote = new EventEmitter();

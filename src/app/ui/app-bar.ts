@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { AuthService } from '../services';
 
 @Component({
     selector: 'app-bar',
@@ -26,4 +27,9 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     templateUrl: 'app/templates/app-bar.html'
 
 })
-export class AppBar {}
+export class AppBar {
+    constructor(private authService: AuthService){}
+    signout(){
+        this.authService.signout();
+    }
+}

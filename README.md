@@ -1,6 +1,8 @@
 # Stow
 A note tracking application similar to [Google Keep](https://keep.google.com) built with Angular 2.0.
 
+![Screenshot](http://i.imgur.com/e5gCdRs.png)
+
 ### Usage
 - Clone or fork this repository
 - Make sure you have [node.js](https://nodejs.org/) installed version 5+
